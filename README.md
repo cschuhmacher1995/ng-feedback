@@ -6,7 +6,7 @@ including Internationalisation
 
 ## Demo
 
-[LINK](LINK)
+[https://github.com/cschuhmacher1995/ng-feedback](https://github.com/cschuhmacher1995/ng-feedback)
 
 ## Install
 

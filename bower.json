@@ -5,7 +5,7 @@
   "description": "Advanced Angular feedback directive similar to Google Feedback using HTTP and includes an internationalisation",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cschuhmacher1995/advanced-angular-feedback.git"
+    "url": "git://github.com/cschuhmacher1995/ng-feedback.git"
   },
   "license": "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License",
   "dependencies": {
