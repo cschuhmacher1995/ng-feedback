@@ -1,0 +1,23 @@
+{
+  "name": "ngFeedback",
+  "version": "0.0.1",
+  "main": "./dist/ngFeedback.min.js",
+  "description": "Advanced Angular feedback directive similar to Google Feedback using HTTP and includes an internationalisation",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cschuhmacher1995/advanced-angular-feedback.git"
+  },
+  "license": "https://fedoraproject.org/wiki/Licensing/Apple_MIT_License",
+  "dependencies": {
+    "angular": "*",
+    "jquery": "*",
+    "html2canvas": "*",
+    "angular-translate": "*"
+  },
+  "ignore": [
+    "node_modules",
+    "components",
+    "lib",
+    ".idea"
+  ]
+}
