@@ -43,8 +43,8 @@ angular.module('ng-feedback', ['templates-ngfeedback', 'pascalprecht.translate']
                     $.feedback = function (options) {
 
                         var settings = $.extend({
-                            httpURL: 'http://localhost:8081/feedback',
-                            postBrowserInfo: false,
+                            httpURL: 'http://localhost:8080/feedback',
+                            postBrowserInfo: true,
                             postHTML: true,
                             postURL: true,
                             proxy: undefined,

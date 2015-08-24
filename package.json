@@ -3,7 +3,10 @@
   "description": "Advanced Angular feedback directive similar to Google Feedback using HTTP including Internationalisatoin",
   "version": "0.0.1",
   "filename": "ng-feedback.min.js",
-  "main": "./dist/ng-feedback.min.js",
+  "main": [
+    "dist/ng-feedback.min.js",
+    "dist/ng-feedback.min.css"
+  ],
   "homepage": "https://github.com/cschuhmacher1995/ng-feedback",
   "author": "Christian Schuhmacher <cschuhmacher1995@gmail.com>",
   "repository": {
