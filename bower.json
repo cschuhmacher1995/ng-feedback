@@ -1,7 +1,10 @@
 {
   "name": "ngFeedback",
-  "version": "0.0.1",
-  "main": "./dist/ng-feedback.min.js",
+  "version": "0.0.3",
+  "main": [
+    "dist/ng-feedback.min.js",
+    "dist/ng-feedback.min.css"
+  ],
   "description": "Advanced Angular feedback directive similar to Google Feedback using HTTP and includes an internationalisation",
   "repository": {
     "type": "git",
