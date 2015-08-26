@@ -1,7 +1,7 @@
 {
   "name": "ng-feedback",
   "description": "Advanced Angular feedback directive similar to Google Feedback using HTTP including Internationalisatoin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "filename": "ng-feedback.min.js",
   "main": [
     "dist/ng-feedback.min.js",

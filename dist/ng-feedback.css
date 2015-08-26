@@ -1,7 +1,7 @@
 .feedback-btn {
   position: fixed;
-  right: 60px;
-  bottom: -3px;
+  left: 3px;
+  bottom: 3px;
   width: auto;
   font-size: 14px;
 }
