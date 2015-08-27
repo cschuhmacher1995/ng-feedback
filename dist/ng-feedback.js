@@ -31,18 +31,24 @@ angular.module('ng-feedback', ['templates-ngfeedback', 'pascalprecht.translate']
     .directive('ngFeedback', ['$http', '$templateCache', function ($http, $templateCache) {
         return {
             restrict: 'EA',
-            replace: true,
+//            replace: true,
             transclude: true,
             scope: {
                 options: '='
             },
-            link: function ($scope, $element, $attrs) {
-
+            link: function ($scope, element, $attrs) {
                 (function ($) {
+                    var onOpen, settings;
+
+                    element.on('$destroy', function() {
+                        $(document).off('click', settings.feedbackButton, onOpen);
+                        $('body .feedback-btn').remove();
+                        console.log(arguments);
+                    });
 
                     $.feedback = function (options) {
 
-                        var settings = $.extend({
+                        settings = $.extend({
                             httpURL: 'http://localhost:8080/feedback',
                             postBrowserInfo: true,
                             postHTML: true,
@@ -86,7 +92,7 @@ angular.module('ng-feedback', ['templates-ngfeedback', 'pascalprecht.translate']
                             if (isFeedbackButtonNative) {
                                 $('body').append('<button class="feedback-btn feedback-btn-blue">' + settings.initButtonText + '</button>');
                             }
-                            $(document).on('click', settings.feedbackButton, function () {
+                            onOpen = function () {
                                 if (isFeedbackButtonNative) {
                                     $(this).hide();
                                 }
@@ -573,7 +579,8 @@ angular.module('ng-feedback', ['templates-ngfeedback', 'pascalprecht.translate']
                                         $('#feedback-overview-error').show();
                                     }
                                 });
-                            });
+                            };
+                            $(document).on('click', settings.feedbackButton, onOpen);
                         }
 
                         function close() {
