@@ -1,6 +1,6 @@
 {
   "name": "ngFeedback",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": [
     "dist/ng-feedback.min.js",
     "dist/ng-feedback.min.css"
