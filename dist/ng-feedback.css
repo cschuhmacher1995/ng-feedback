@@ -4,7 +4,8 @@
   bottom: 150px;
   width: 150px;
   font-size: 14px;
-  transform: rotate(90deg)
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 #feedback-module p {
